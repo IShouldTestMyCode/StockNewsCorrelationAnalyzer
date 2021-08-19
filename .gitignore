@@ -158,3 +158,5 @@ buildNumber.properties
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij,maven
+# Additional personal stuff
+SampleCodeFromAgesAgo/
