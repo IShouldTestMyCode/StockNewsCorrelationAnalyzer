@@ -163,5 +163,8 @@ buildNumber.properties
 SampleCodeFromAgesAgo/
 
 # Protect secret keys
+ds/client-secret/*
+!ds/client-secret/README.md
+
 
 
