@@ -9,6 +9,7 @@ import java.nio.*;
 
 public class Main {
     public static void main(String[] args) {
-
+        String[][] data = DataManager.getData("/Users/the_creeper2007/Desktop/StockMarket/StockTracking/ds/reuters_headlines.csv");
+        System.out.println(Arrays.deepToString(data));
     }
 }
