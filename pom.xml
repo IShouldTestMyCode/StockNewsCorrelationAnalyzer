@@ -46,9 +46,9 @@
             <artifactId>google-cloud-language</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.7</version>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 
