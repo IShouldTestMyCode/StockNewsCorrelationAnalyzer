@@ -163,5 +163,5 @@ buildNumber.properties
 SampleCodeFromAgesAgo/
 
 # Protect secret keys
-#ds/client-secret/
+
 
