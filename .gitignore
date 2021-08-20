@@ -160,3 +160,6 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij,maven
 # Additional personal stuff
 SampleCodeFromAgesAgo/
+
+# Protect secret keys
+ds/client-secret/

@@ -1,0 +1,2 @@
+Error code 1:
+Error code 2: The date format of the dataset is incorrect.  The date must be in column 2, formatted like "Mar 22 2020".

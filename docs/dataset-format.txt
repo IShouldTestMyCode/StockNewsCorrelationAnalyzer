@@ -1,0 +1,5 @@
+The dataset must be formatted in accordance with RFC 4180 with header. The header should be "Headlines,Time,Description".
+
+The description would be used for the actual analysis, the date is to be used to measure coorelation, and the headline would be used as a reference.
+
+The time should be formatted like "Jul 17 2020". If this is not formatted correctly, then error 2 would be thrown.
