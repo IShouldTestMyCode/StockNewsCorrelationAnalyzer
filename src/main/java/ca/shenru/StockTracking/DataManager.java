@@ -16,17 +16,24 @@ import java.io.*;
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
 
-public class getDataset {
+public class DataManager {
     private static Marker fatal = MarkerFactory.getMarker("FATAL");
     private static Logger logger = LoggerFactory.getLogger(Main.class);
 
-    public static String[][] getData(String path) throws IOException {
+    public static String[][] getData(String path) {
         logger.info("Starting to get data from dataset");
-        Reader reader = Files.newBufferedReader(Paths.get(path));
-        CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+        CSVParser csvParser = null;
+        try {
+            Reader reader = Files.newBufferedReader(Paths.get(path));
+            csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+        }
+        catch(IOException e){
+            logger.error(fatal, "Data is inaccessible, corrupted, or the format is incorrect.  See code 3 in error.txt.", e);
+            System.exit(3);
+        }
         int index = 0;
         int rows = 32771;
-        String[][] putParsedValuesHere = new String[2][rows];
+        String[][] putParsedValuesHere = new String[2][rows+1];
         for (CSVRecord csvRecord : csvParser) {
             // Accessing Values by Column Index
             index++;
@@ -45,7 +52,7 @@ public class getDataset {
             date = LocalDate.parse(time, formatter);
         }
         catch (DateTimeParseException e) {
-            logger.error(fatal, "Incorrect date format.  See error code 2 in error.txt", e);
+            logger.error(fatal, "Incorrect date format.  See code 2 in error.txt.", e);
             System.exit(2);
         }
         return date;

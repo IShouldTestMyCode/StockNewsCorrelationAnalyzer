@@ -158,8 +158,10 @@ buildNumber.properties
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij,maven
-# Additional personal stuff
+
+# Reference code that nobody should care
 SampleCodeFromAgesAgo/
 
 # Protect secret keys
 ds/client-secret/
+

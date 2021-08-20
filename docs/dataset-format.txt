@@ -1,4 +1,4 @@
-The dataset must be formatted in accordance with RFC 4180 with header. The header should be "Headlines,Time,Description".
+The dataset must be formatted in accordance with RFC 4180 with header, using the format csv. The header should be "Headlines,Time,Description".
 
 The description would be used for the actual analysis, the date is to be used to measure coorelation, and the headline would be used as a reference.
 
