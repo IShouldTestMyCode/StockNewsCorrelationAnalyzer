@@ -17,8 +17,8 @@ import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
 
 public class DataManager {
-    private static Marker fatal = MarkerFactory.getMarker("FATAL");
-    private static Logger logger = LoggerFactory.getLogger(Main.class);
+    private static final Marker fatal = MarkerFactory.getMarker("FATAL");
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
     public static String[][] getData(String path) {
         logger.info("Starting to get data from dataset");
