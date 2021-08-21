@@ -10,7 +10,10 @@ import java.io.*;
 import java.nio.*;
 
 public class Main {
-
+    public static void setup(){
+        Configurations.verifyConfig();
+    }
     public static void main(String[] args) {
+        
     }
 }

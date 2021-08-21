@@ -29,7 +29,14 @@ public class DataManager {
             System.exit(3);
         }
         int index = 0;
-        int rows = 32771;
+        int rows = 0;
+        try {
+            rows = Integer.parseInt(Configurations.getConfig("DatasetEntries"));
+        }
+        catch(NumberFormatException e){
+            System.err.println("[FATAL] DatasetEntries in Config.json is not an integer.  See code 5 in error.txt");
+            System.exit(5);
+        }
         String[][] putParsedValuesHere = new String[2][rows+1];
         for (CSVRecord csvRecord : csvParser) {
             // Accessing Values by Column Index
