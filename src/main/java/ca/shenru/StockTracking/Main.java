@@ -14,6 +14,6 @@ public class Main {
         Configurations.verifyConfig();
     }
     public static void main(String[] args) {
-        
+
     }
 }
