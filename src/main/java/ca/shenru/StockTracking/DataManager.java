@@ -8,27 +8,24 @@ import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.lang.*;
 import java.net.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import org.apache.commons.csv.*;
 import java.io.*;
-import org.slf4j.Marker;
-import org.slf4j.MarkerFactory;
+
 
 public class DataManager {
-    private static final Marker fatal = MarkerFactory.getMarker("FATAL");
-    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
 
     public static String[][] getData(String path) {
-        logger.info("Starting to get data from dataset");
+        System.out.println("[INFO] Starting to get data from dataset");
         CSVParser csvParser = null;
         try {
             Reader reader = Files.newBufferedReader(Paths.get(path));
             csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
         }
         catch(IOException e){
-            logger.error(fatal, "Data is inaccessible, corrupted, or the format is incorrect.  See code 3 in error.txt.", e);
+            System.err.println("[FATAL] Data is inaccessible, corrupted, or the format is incorrect.  See code 3 in error.txt.");
             System.exit(3);
         }
         int index = 0;
@@ -52,7 +49,7 @@ public class DataManager {
             date = LocalDate.parse(time, formatter);
         }
         catch (DateTimeParseException e) {
-            logger.error(fatal, "Incorrect date format.  See code 2 in error.txt.", e);
+            System.err.println("[FATAL] Incorrect date format.  See code 2 in error.txt.");
             System.exit(2);
         }
         return date;

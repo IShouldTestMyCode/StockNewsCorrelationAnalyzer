@@ -1,8 +1,9 @@
 package ca.shenru.StockTracking;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Credentials {
-    public static boolean VerifyConfig(){
-        //TODO: Actually implement code here lol
-        return true;
-    }
+
 }

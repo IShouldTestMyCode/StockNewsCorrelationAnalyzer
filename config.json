@@ -1,4 +1,5 @@
 {
   "DatasetEntries": "32771",
+  "DatasetLocation": "/Users/the_creeper2007/Desktop/StockMarket/StockTracking/ds/reuters_headlines.csv",
   "GoogleCredentialsPath": "/Users/the_creeper2007/Desktop/StockMarket/StockTracking/ds/client-secret/google-secret.json"
 }
