@@ -14,7 +14,7 @@ import org.apache.commons.io.*;
 
 public class Configurations {
 ///Users/the_creeper2007/Desktop/StockMarket/StockTracking/config.json
-    private static String getConfig(){
+    private static String getConfigContent(){
         String basePath = new File("").getAbsolutePath();
         System.out.println("[INFO] Retrieved absolute path: "+basePath);
         String fullPath = basePath+"/config.json";
@@ -42,8 +42,12 @@ public class Configurations {
         }
         return true;
     }
+    public static String getConfig(String field){
+        JSONObject o = new JSONObject(getConfigContent());
+        return o.getString(field);
+    }
     public static void verifyConfig(){
-        if (!checkConfig(getConfig())){
+        if (!checkConfig(getConfigContent())){
             System.err.println("[FATAL] Malformed configuration file, see code 1 in error.txt");
             System.exit(1);
         }
