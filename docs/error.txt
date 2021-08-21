@@ -3,3 +3,11 @@ Error code 2: The date format of the dataset is incorrect.  The date must be in 
 Error code 3: The file is inaccessible, corrupted, or the format is incorrect.  The path to the dataset file should be the full path, and the format of the dataset must be in compliance with dataset-format.txt.
 Error code 4: The config.json file is inaccessible or corrupted.
 Error code 5: Field DatasetEntries in Config.json could not be converted to an integer.
+Error code 6: An IO Exception occurred while instantiating Google's LanguageServiceClient. I don't know what could cause this either.  Good luck.
+Error code 7: The software cannot write to terminal. Be aware that this program is only compatible with UNIX.
+Error code 8: The program cannot connect to Google's Language service servers.  Double check that there are no firewall blocking the:
+                Port 80
+                Port 443
+                Port 9000
+              Also, whitelist *.google.com, *.googleapis.com, and leave port 9000 unblocked.
+Error code 9:
