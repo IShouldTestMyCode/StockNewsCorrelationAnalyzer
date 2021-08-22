@@ -47,8 +47,10 @@ public class DataManager {
             putParsedValuesHere[0][index] = time;
             putParsedValuesHere[1][index] = description;
         }
+        System.out.println("[DEBUG] [1] [2] of getData is "+putParsedValuesHere[1][2]);
         return putParsedValuesHere;
     }
+
     public static LocalDate parseDate(String time){
         LocalDate date = null;
         try {
