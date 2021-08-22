@@ -27,7 +27,8 @@ public class Main {
         String Description;
         float[] temp;
         float[][] SentimentScore = new float[2][parseInt(Configurations.getConfig("DatasetEntries"))];
-        for (int i = 2; i < rawData.length; i++){
+        System.out.println("[DEBUG] Length of table is: "+rawData[1].length);
+        for (int i = 2; i < rawData[1].length; i++){
             Description = rawData[1][i];
             System.out.println("[DEBUG] Verifying dataset path: "+DatasetPath);
             System.out.println("[INFO] Starting to analyze "+Description);
