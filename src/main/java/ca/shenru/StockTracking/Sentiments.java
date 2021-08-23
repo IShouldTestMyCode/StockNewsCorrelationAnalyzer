@@ -7,6 +7,7 @@ import com.google.cloud.language.v1.Sentiment;
 
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class Sentiments {
     public static float[] analyze(String content){
@@ -28,9 +29,18 @@ public class Sentiments {
             System.exit(8);
         }
         float[] Data = new float[2];
-
+        int totalCannotCompute = 0;
         Data[0] = sentiment.getScore();
         Data[1] = sentiment.getMagnitude();
+        language.shutdown();
+        try {
+            language.awaitTermination(30, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            totalCannotCompute++;
+            System.err.println("[WARNING] One of the elements cannot be computed. In total, "+totalCannotCompute+" elements cannot be computed.");
+        }
+        language.close();
+
         return Data;
     }
 }
