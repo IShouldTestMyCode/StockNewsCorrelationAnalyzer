@@ -1,16 +1,16 @@
-This project is licenced under a modified MIT licence, with no substancial change to the licence.
-**Permissions**
-  - ✅ Commercial use
-  - ✅ Modification
-  - ✅ Distribution
-  - ✅ Private use
-**Limitations**
-  - ❌ Liabillity
-  - ❌ Warranty
-**Conditions**
-  - ℹ️ License and copyright notice
+> This project is licenced under a modified MIT licence, with no substancial change to the licence.
+> **Permissions**
+>   - ✅ Commercial use
+>   - ✅ Modification
+>   - ✅ Distribution
+>   - ✅ Private use
+> **Limitations**
+>   - ❌ Liabillity
+>   - ❌ Warranty
+> **Conditions**
+>   - ℹ️ License and copyright notice
 
-Copyright (c) 2021 TheCreeperAPI
+**Copyright (c) 2021 TheCreeperAPI**
 
 **Permission is granted**
 Permission is hereby granted, free of charge, to any person obtaining a copy
