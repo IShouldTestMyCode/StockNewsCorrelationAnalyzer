@@ -42,3 +42,6 @@ mvn clean compile exec:java -f pom.xml
 This will install all of the dependencies and execute the software. On average, this usually takes a couple hours on Google's servers.
 ## Results
 Once the system exits with code 0, go to /ds/out, and you should find your CSV.  Re-lable the CSV, and it should be ready to go.
+
+## Licence
+This project is released under a slightly-modified MIT licence.
