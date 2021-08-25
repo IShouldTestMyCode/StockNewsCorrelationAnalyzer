@@ -1,6 +1,5 @@
 {
   "DatasetEntries": "32771",
-  "StockEntries": "589",
   "DatasetLocation": "/Users/the_creeper2007/Desktop/StockMarket/StockNewsCorrelationAnalyzer/ds/reuters_headlines.csv",
   "OutputLocation": "/Users/the_creeper2007/Desktop/StockMarket/StockNewsCorrelationAnalyzer/ds/Client-secret/out/exit.csv"
 }
