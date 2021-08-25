@@ -10,4 +10,4 @@ Error code 8: The program cannot connect to Google's Language service servers.  
                 Port 443
                 Port 9000
               Also, whitelist *.google.com, *.googleapis.com, and leave port 9000 unblocked.
-Error code 9:
+Error code 9: Bufferedwriter cannot be written to or cannot be closed.

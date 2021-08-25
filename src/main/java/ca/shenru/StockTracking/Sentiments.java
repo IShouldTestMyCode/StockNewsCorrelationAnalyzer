@@ -7,6 +7,7 @@ import com.google.cloud.language.v1.Sentiment;
 
 
 import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Sentiments {
@@ -43,4 +44,11 @@ public class Sentiments {
 
         return Data;
     }
+    public static float[] testAnalyze(String content){
+        float[] Data = new float[2];
+        Data[0] = (float) Math.random();
+        Data[1] = (float) Math.random();
+        return Data;
+    }
+
 }
