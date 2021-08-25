@@ -1,7 +1,7 @@
-<div style="text-align:center">
+
 ![Line count](https://img.shields.io/tokei/lines/github/TheCreeperAPI/StockNewsCorrelationAnalyzer)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e496f91f63f545baabfcc259f322875e)](https://www.codacy.com/gh/TheCreeperAPI/StockNewsCorrelationAnalyzer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheCreeperAPI/StockNewsCorrelationAnalyzer&amp;utm_campaign=Badge_Grade)
-</div>
+
 # StockNewsCorrelationAnalyzer
 This software can use Google's sentiment analysis to analyze a dataset in /ds/ and be able to output a .csv file with the date, sentiment, and magnitude of the "description" column from the dataset.
 ## Origional purpose
